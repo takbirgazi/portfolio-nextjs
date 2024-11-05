@@ -2,7 +2,7 @@
 const SectionHeader = () => {
 
     return (
-        <div>
+        <div className="p-6">
             <h2>This is Section Header</h2>
         </div>
     );
