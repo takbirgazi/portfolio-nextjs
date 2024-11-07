@@ -1,0 +1,38 @@
+   .animatedBar::before {
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-name: barAnimation;
+       animation-timing-function: linear;
+       background-color: #101010;
+       content: '';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 0px;
+       width: 4px;
+   }
+
+   .animatedBar::after {
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+       animation-name: barAnimation;
+       animation-timing-function: linear;
+       background-color: #101010;
+       content: '';
+       height: 100%;
+       position: absolute;
+       top: 0;
+       left: 6px;
+       width: 4px;
+   }
+
+   /* Define the keyframes for the barAnimation */
+   @keyframes barAnimation {
+       0% {
+           transform: translateX(0px);
+       }
+
+       100% {
+           transform: translateX(112px);
+       }
+   }

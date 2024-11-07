@@ -6,8 +6,8 @@ import logoImage from "@/public/assets/images/img-kitzu-logo.png";
 
 const Navbar = () => {
     return (
-        <div className="py-5 bg-black sticky">
-            <div className="flex justify-between items-center container mx-auto">
+        <div className="p-5 bg-black sticky">
+            <div className="flex justify-between items-center">
                 <div className="w-4/12">
                     <figure className="w-[110px] overflow-hidden">
                         <Image src={logoImage} alt="Kitzu" />

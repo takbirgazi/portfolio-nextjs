@@ -1,14 +1,16 @@
 "use client"
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
-import SectionHeader from "@/components/SectionHeader";
+import Hero from "@/components/Hero/Hero";
+import About from "@/components/About/About";
 
 export default function Home() {
   return (
-    <main>
+    <main className="container mx-auto">
       <Navbar />
+      <Hero />
       <section>
-        <SectionHeader />
+        <About />
       </section>
       <Footer />
     </main>
