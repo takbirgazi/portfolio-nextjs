@@ -7,7 +7,7 @@ import Skills from "@/components/Skills/Skills";
 
 export default function Home() {
   return (
-    <main className="container mx-auto bg-[#0a0a0a]">
+    <main className="container mx-auto bg-[#0a0a0a] text-gray-100">
       <Navbar />
       <Hero />
       <section>
