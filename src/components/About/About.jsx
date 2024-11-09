@@ -5,6 +5,9 @@ import { FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaFacebookF } from "react
 
 
 const About = () => {
+
+    const resumeUrl = `https://drive.google.com/file/d/139eqEehEwPe1FwsOAklv6T2ghNo7b3GH/view?usp=sharing`;
+    
     return (
         <div className="p-5 w-11/12 mx-auto" id="about">
             <SectionHeading description="Get to know me" title="About Me" />
@@ -37,7 +40,7 @@ const About = () => {
                     </div>
                     <div className="my-10 flex flex-wrap gap-5">
                         <div>
-                            <a href="https://drive.google.com/file/d/1S51nSx-wXBZWXybeMGwm3LDbhoaQkSJJ/view?usp=sharing" target="_blank" className="px-5 py-2 rounded-3xl bg-[#00844e] text-white">My Resume</a>
+                            <a href={resumeUrl} target="_blank" className="px-5 py-2 rounded-3xl bg-[#00844e] text-white">My Resume</a>
                         </div>
                         <div className="border-b-2 w-20 border-[#929292] mb-[10px] lg:flex-grow-0 flex-grow"></div>
                         <div className="inline-flex gap-4 items-center lg:pl-0 pl-1">
