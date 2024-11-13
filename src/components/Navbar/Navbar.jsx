@@ -13,6 +13,7 @@ const Navbar = () => {
                         <figure className="w-[110px] overflow-hidden">
                             <Image src={logoImage} alt="Kitzu" />
                         </figure>
+                        {/* <h2 className="text-2xl">TAKBIR GAZI</h2> */}
                     </Link>
                 </div>
                 <div className="w-8/12 hidden md:block">
