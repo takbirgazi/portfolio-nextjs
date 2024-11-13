@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { IoLogoIonic } from "react-icons/io";
 import { RiMapPinUserFill } from "react-icons/ri";
@@ -9,10 +9,25 @@ import { SiMinutemailer } from "react-icons/si";
 
 const Contact = () => {
     const [message, setMessage] = useState('');
+    const form = useRef();
+    const serviceId = 'service_ujj7qn5';
+    const templateId = 'template_311bpxr';
+    const publicKey = 'HIsn8kKKD_nMlxF11';
 
-    const handleFormSubmit = (event) => {
+    const handleFormSubmit = async (event) => {
         event.preventDefault();
-        setMessage("Message Send Successfully")
+        emailjs
+            .sendForm(serviceId, templateId, form.current, {
+                publicKey: publicKey,
+            })
+            .then(
+                () => {
+                    setMessage("Message Send Successfully!");
+                },
+                (error) => {
+                    setMessage("Message Not Send!");
+                },
+            );
     }
 
     return (
@@ -22,7 +37,7 @@ const Contact = () => {
                 <div className='w-full md:w-7/12'>
                     <h2 className='text-2xl font-bold text-gray-100'>Message Me</h2>
                     <div className='w-full py-5'>
-                        <form className='flex flex-col gap-5' action="">
+                        <form ref={form} onSubmit={handleFormSubmit} className='flex flex-col gap-5'>
                             <div className="text-sm text-[#00844e]">{message && message}</div>
                             <div className='flex flex-col lg:flex-row gap-5'>
                                 <input name='name' className='w-full p-2 bg-[#161616] outline-none border-b-2 border-[#1d1d1d] focus:border-[#00844e] placeholder:text-[#929292]' type="text" placeholder="Name" required />
