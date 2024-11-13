@@ -6,6 +6,7 @@ import { IoLogoIonic } from "react-icons/io";
 import { RiMapPinUserFill } from "react-icons/ri";
 import { MdOutlineWifiCalling3 } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [message, setMessage] = useState('');
@@ -14,7 +15,7 @@ const Contact = () => {
     const templateId = 'template_311bpxr';
     const publicKey = 'HIsn8kKKD_nMlxF11';
 
-    const handleFormSubmit = async (event) => {
+    const handleFormSubmit = (event) => {
         event.preventDefault();
         emailjs
             .sendForm(serviceId, templateId, form.current, {
@@ -22,6 +23,7 @@ const Contact = () => {
             })
             .then(
                 () => {
+                    event.target.reset();
                     setMessage("Message Send Successfully!");
                 },
                 (error) => {
