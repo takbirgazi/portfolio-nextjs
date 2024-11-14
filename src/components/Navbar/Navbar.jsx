@@ -21,9 +21,8 @@ const Navbar = () => {
                         <ul>
                             <li className="flex gap-8">
                                 <Link href="#about" >About</Link>
-                                <Link href="#resume" >Resume</Link>
+                                <Link href="#skills" >Skills</Link>
                                 <Link href="#portfolio" >Portfolio</Link>
-                                <Link href="#blog" >Blog</Link>
                                 <Link href="#contact" >Contact</Link>
                             </li>
                         </ul>

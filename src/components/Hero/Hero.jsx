@@ -12,7 +12,7 @@ const Hero = () => {
                     <div className="text-3xl font-normal text-white text-center mb-12 flex items-center justify-center">
                         <span>I’m a&nbsp;</span> <Typewriter
                             options={{
-                                strings: ['Web Developer', 'Frontend Developer', 'React Native Developer'],
+                                strings: ['Full Stack Web Developer', 'Frontend Developer', 'Backend Developer'],
                                 autoStart: true,
                                 loop: true,
                             }}

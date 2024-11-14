@@ -33,7 +33,7 @@ const Contact = () => {
     }
 
     return (
-        <div className="p-5 w-11/12 mx-auto" id="about">
+        <div className="p-5 w-11/12 mx-auto" id="contact">
             <SectionHeading description="Feel free to contact me anytimes" title="Get in Touch" />
             <div className='flex flex-col md:flex-row gap-10 pb-10'>
                 <div className='w-full md:w-7/12'>

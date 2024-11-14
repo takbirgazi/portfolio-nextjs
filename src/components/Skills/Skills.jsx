@@ -88,7 +88,7 @@ const Skills = () => {
     ]
 
     return (
-        <div className="p-5 w-11/12 mx-auto">
+        <div className="p-5 w-11/12 mx-auto" id="skills">
             <SectionHeading description="Level of knowledge" title="My Skills" />
             <div className="pb-10">
                 <div className="flex flex-col gap-10">
