@@ -60,7 +60,7 @@ const Contact = () => {
                 <div className='w-full md:w-5/12'>
                     <h2 className='text-2xl font-bold text-gray-100 pb-3'>Contact Info</h2>
                     <div className='w-full py-5'>
-                        <p className='text-[#929292]'>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
+                        <p className='text-[#929292]'>I am always available for work if the right project comes along, Feel free to contact me!</p>
                         <div className='py-5'>
                             <div className="flex gap-5 items-center">
                                 <div><IoLogoIonic className="text-4xl text-[#00844e]" /> </div>
