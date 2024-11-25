@@ -31,7 +31,7 @@ const Projects = () => {
             projectName: `Geo Smart Planning`,
             projectDescription: `A Consultancy Firm`,
             projectImage: gesosmartpalnning,
-            projectLiveLink: `https://geosmartplanning.com.bd/`,
+            projectLiveLink: `https://geosmartplanning.com.bd`,
         }
     ]
     return (
@@ -68,8 +68,6 @@ const Projects = () => {
                         </div>
                     </div>)
                 }
-
-
             </div>
         </div>
     );
