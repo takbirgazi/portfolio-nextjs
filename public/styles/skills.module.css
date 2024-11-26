@@ -1,0 +1,19 @@
+.resumeCard {
+    position: relative;
+}
+
+.resumeCard::before {
+    content: "";
+    width: 17px;
+    height: 10px;
+    position: absolute;
+    background: #00844e;
+    top: 27px;
+    left: 0;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.resumeCard:last-child {
+    border-bottom: none;
+}
