@@ -45,7 +45,7 @@ const Projects = () => {
                         <figure className='w-full h-56'>
                             <Image className="w-full h-full" src={projects?.projectImage} alt="Project Name" />
                         </figure>
-                        <div className={`${showDetails && "-bottom-[150px]"} ease-in-out transition-all duration-700 absolute bottom-0 left-0 backdrop-blur-lg w-full border-t border-opacity-50 border-gray-500`}>
+                        <div className={`${showDetails ? "-bottom-[150px]" : "bottom-[0px]"} absolute ease-in-out transition-all duration-700 left-0 backdrop-blur-lg w-full border-t border-opacity-50 border-gray-500`}>
                             <div className='h-full p-5 bg-opacity-20'>
                                 <h2 className='font-semibold text-[#19af7a]'>{projects?.projectName}</h2>
                                 <p className='text-sm text-[#919191]'>{projects?.projectDescription}</p>
