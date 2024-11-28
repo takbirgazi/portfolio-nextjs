@@ -1,4 +1,5 @@
 ## Portfolio
+Portfolio by using Next js and Javascript
 
 *NPM Uses*
 * nextui-cli
