@@ -1,0 +1,10 @@
+.projectCard{
+    position: relative;
+}
+.showProjDetails{
+    position: absolute;
+    bottom: -150px;
+}
+.projectCard:hover > .showProjDetails{
+    bottom: 0px;
+}

@@ -6,10 +6,9 @@ import gesosmartpalnning from "../../../public/images/projects/geosmartplanning.
 import taskmanagement from "../../../public/images/projects/taskManager.png";
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitMerge, IoIosGitBranch } from "react-icons/io";
-import { useState } from 'react';
+import styles from "../../../public/styles/projects.module.css";
 
 const Projects = () => {
-    const [showDetails, setShowDetails] = useState(true);
     const allProjects = [
         {
             _id: 1,
@@ -36,16 +35,17 @@ const Projects = () => {
             projectLiveLink: `https://geosmartplanning.com.bd`,
         }
     ]
+
     return (
         <div className="p-5 w-11/12 mx-auto" id="projects">
             <SectionHeading description="Showcasing some of my best work" title="Projects" />
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:pb-5 pb-0 place-items-center'>
                 {
-                    allProjects?.map(projects => <div key={projects._id} onMouseOver={() => setShowDetails(false)} onMouseLeave={() => setShowDetails(true)} className='cursor-pointer rounded-md border border-[#929292] border-opacity-50 shadow-md overflow-hidden border-[#0a0a0ae0] w-full h-full relative'>
+                    allProjects?.map(projects => <div key={projects._id} className={`${styles.projectCard} cursor-pointer rounded-md border border-[#929292] border-opacity-50 shadow-md overflow-hidden border-[#0a0a0ae0] w-full h-full`}>
                         <figure className='w-full h-56'>
                             <Image className="w-full h-full" src={projects?.projectImage} alt="Project Name" />
                         </figure>
-                        <div className={`${showDetails ? "-bottom-[150px]" : "bottom-[0px]"} absolute ease-in-out transition-all duration-700 left-0 backdrop-blur-lg w-full border-t border-opacity-50 border-gray-500`}>
+                        <div className={`${styles.showProjDetails} ease-in-out transition-all duration-700 left-0 backdrop-blur-lg w-full border-t border-opacity-50 border-gray-500`}>
                             <div className='h-full p-5 bg-opacity-20'>
                                 <h2 className='font-semibold text-[#19af7a]'>{projects?.projectName}</h2>
                                 <p className='text-sm text-[#919191]'>{projects?.projectDescription}</p>
