@@ -1,8 +1,18 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import logoImage from "../../../public/images/logo-main.png"
+import logoImage from "../../../public/images/logo-main.png";
+import { FaBars } from "react-icons/fa";
+import { useState } from "react";
 
 const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false);
+    const navLinks = <>
+        <Link href="#about" >About</Link>
+        <Link href="#skills" >Skills</Link>
+        <Link href="#projects" >Projects</Link>
+        <Link href="#contact" >Contact</Link>
+    </>
     return (
         <div className="p-5 bg-black sticky top-0 z-10 shadow-md shadow-[#374c4438]">
             <div className="flex justify-between items-center">
@@ -17,12 +27,19 @@ const Navbar = () => {
                     <div className="flex justify-end items-center">
                         <ul>
                             <li className="flex gap-8">
-                                <Link href="#about" >About</Link>
-                                <Link href="#skills" >Skills</Link>
-                                <Link href="#projects" >Projects</Link>
-                                <Link href="#contact" >Contact</Link>
+                                {navLinks}
                             </li>
                         </ul>
+                    </div>
+                </div>
+                <div className="md:hidden flex justify-end">
+                    <div className="relative">
+                        <FaBars onClick={() => setShowMenu(!showMenu)} className="text-xl" />
+                        <div className={`${showMenu ? "right-0" : "hidden -right-[100px]"} absolute top-12 backdrop-blur-3xl p-5 w-36 rounded-md`}>
+                            <ul className="flex flex-col gap-5">
+                                {navLinks}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
