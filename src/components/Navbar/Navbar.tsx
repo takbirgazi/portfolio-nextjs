@@ -1,7 +1,6 @@
-
 import Image from "next/image";
 import Link from "next/link";
-import logoImage from "../../../public/images/img-kitzu-logo.png"
+import logoImage from "../../../public/images/logo-main.png"
 
 const Navbar = () => {
     return (
@@ -12,7 +11,6 @@ const Navbar = () => {
                         <figure className="w-[110px] overflow-hidden">
                             <Image src={logoImage} alt="Kitzu" />
                         </figure>
-                        {/* <h2 className="text-2xl">TAKBIR GAZI</h2> */}
                     </Link>
                 </div>
                 <div className="w-8/12 hidden md:block">

@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Kitzu - Personal Portfolio Template",
-  description: "Personal Portfolio Template",
+  title: "Takbir Gazi - Web Developer",
+  description: "Web Developer",
 };
 
 export default function RootLayout({
