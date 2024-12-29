@@ -21,7 +21,7 @@ const About = () => {
                         <p className="text-2xl text-[#00844e]">Who am I ? 🤔</p>
                     </div>
                     <div>
-                        <h3 className="text-4xl font-bold leading-snug">I’m Md. Takbir Gazi, a Full Stack Web Developer.</h3>
+                        <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug">I’m Md. Takbir Gazi, a Full Stack Web Developer.</h3>
                     </div>
                     <div className="border-b-2 border-[#929292] pb-10">
                         <p className="text-[#929292] leading-loose">I am a passionate web developer with a strong foundation in front-end and full-stack development. Currently, I’m pursuing a BSS Honor’s degree in Economics at the National University of Bangladesh, but my love for technology has led me to a rewarding journey in web development.</p>
