@@ -48,17 +48,17 @@ const Skills = () => {
         },
         {
             _id: 6,
-            skillName: `MySQL`,
-            learnFrom: `Self Learning From Internet`,
-            learnStart: `2020`,
+            skillName: `MongoDB`,
+            learnFrom: `Programming Hero Courses`,
+            learnStart: `2024`,
             skillCategory: `database`,
             description: ``
         },
         {
             _id: 7,
-            skillName: `MongoDB`,
+            skillName: `PostgreSQL`,
             learnFrom: `Programming Hero Courses`,
-            learnStart: `2024`,
+            learnStart: `2025`,
             skillCategory: `database`,
             description: ``
         },
@@ -84,6 +84,22 @@ const Skills = () => {
             learnFrom: `Programming Hero Courses`,
             learnStart: `2023`,
             skillCategory: `frontend`,
+            description: ``
+        },
+        {
+            _id: 11,
+            skillName: `Next Js`,
+            learnFrom: `Self Learning by Reading Documentation`,
+            learnStart: `2025`,
+            skillCategory: `frontend`,
+            description: ``
+        },
+        {
+            _id: 12,
+            skillName: `Typescript`,
+            learnFrom: `Self Learning by Reading Documentation`,
+            learnStart: `2025`,
+            skillCategory: `backend`,
             description: ``
         },
 

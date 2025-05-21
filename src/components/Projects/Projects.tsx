@@ -4,6 +4,9 @@ import SectionHeading from '../SectionHeading/SectionHeading';
 import meetUpProject from "../../../public/images/projects/meetUpProject.png";
 import gesosmartpalnning from "../../../public/images/projects/geosmartplanning.png";
 import taskmanagement from "../../../public/images/projects/taskManager.png";
+import motionmark from "../../../public/images/projects/motionmark.png";
+import vital_flow from "../../../public/images/projects/vital_flow.png";
+import codepunk from "../../../public/images/projects/codepunk.png";
 import { FaRegEye } from "react-icons/fa";
 import { IoIosGitMerge, IoIosGitBranch } from "react-icons/io";
 import styles from "../../../public/styles/projects.module.css";
@@ -33,6 +36,29 @@ const Projects = () => {
             projectDescription: `A Consultancy Firm`,
             projectImage: gesosmartpalnning,
             projectLiveLink: `https://geosmartplanning.com.bd`,
+        },
+        {
+            _id: 4,
+            projectName: `Motion Mark`,
+            projectDescription: `A Digital Agency Portfolio`,
+            projectImage: motionmark,
+            projectLiveLink: `https://motionmark.agency`,
+        },
+        {
+            _id: 5,
+            projectName: `Vital Flow`,
+            projectDescription: `A Digital Health Portfolio`,
+            projectImage: vital_flow,
+            projectLiveLink: `https://vital-flow-portfolio.vercel.app`,
+            projectClient: `https://github.com/takbirgazi/vital-flow-portfolio`,
+        },
+        {
+            _id: 6,
+            projectName: `Code Punk`,
+            projectDescription: `A Portfolio Website`,
+            projectImage: codepunk,
+            projectLiveLink: `https://code-punk.vercel.app`,
+            projectClient: `https://github.com/takbirgazi/code-punk`,
         }
     ]
 

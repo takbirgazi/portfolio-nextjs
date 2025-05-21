@@ -16,9 +16,9 @@ const Contact = () => {
 
     const [message, setMessage] = useState<MessageState['message']>('');
     const form = useRef<HTMLFormElement>(null);
-    const serviceId: string = 'service_ujj7qn5';
+    const serviceId: string = 'service_mml8nl8';
     const templateId: string = 'template_311bpxr';
-    const publicKey: string = 'HIsn8kKKD_nMlxF11';
+    const publicKey: string = 'jvwNb-0mt004KKMow';
 
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
